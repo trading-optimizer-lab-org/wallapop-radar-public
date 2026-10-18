@@ -1,0 +1,206 @@
+{
+  "producto": "iPhone 17",
+  "modelo": {
+    "incluye": "iphone\\s?-?17",
+    "excluye": "\\b(pro|max|air|plus|15|16|18)\\b|17\\s?e\\b|funda|carcasa|coque|protector|cristal|\\bcase\\b|cover|h[üu]lle|correa|cargador"
+  },
+  "busqueda": "iphone 17",
+  "fichas": [
+    {
+      "fuente": "Geizhals (DE) 256GB blanco",
+      "tipo": "comparador",
+      "pais": "DE",
+      "capacidad": "256 GB",
+      "url": "https://geizhals.de/apple-iphone-17-256gb-weiss-a3587146.html"
+    },
+    {
+      "fuente": "Geizhals (DE) 256GB negro",
+      "tipo": "comparador",
+      "pais": "DE",
+      "capacidad": "256 GB",
+      "url": "https://geizhals.de/apple-iphone-17-256gb-schwarz-a3587125.html"
+    },
+    {
+      "fuente": "Geizhals (DE) 256GB salvia",
+      "tipo": "comparador",
+      "pais": "DE",
+      "capacidad": "256 GB",
+      "url": "https://geizhals.de/apple-iphone-17-256gb-salbei-a3587148.html"
+    },
+    {
+      "fuente": "PriceSpy (UK) 256GB",
+      "tipo": "comparador",
+      "pais": "UK",
+      "capacidad": "256 GB",
+      "lector": "prisjakt",
+      "url": "https://pricespy.co.uk/product.php?p=14969878"
+    },
+    {
+      "fuente": "LeDénicheur (FR) 256GB",
+      "tipo": "comparador",
+      "pais": "FR",
+      "capacidad": "256 GB",
+      "lector": "prisjakt",
+      "url": "https://ledenicheur.fr/product.php?p=14969878"
+    },
+    {
+      "fuente": "Kimovil",
+      "tipo": "comparador",
+      "pais": "Global",
+      "lector": "kimovil",
+      "url": "https://www.kimovil.com/es/donde-comprar-apple-iphone-17"
+    },
+    {
+      "fuente": "Rebuy (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://www.rebuy.es/comprar/telefonos-moviles-libres/apple/generacion-iphone-17/iphone-17"
+    },
+    {
+      "fuente": "Certideal (FR)",
+      "tipo": "reacondicionado",
+      "pais": "FR",
+      "url": "https://certideal.com/iphone-17-640",
+      "lector": "certideal"
+    },
+    {
+      "fuente": "Swappie (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://swappie.com/es/iphone/iphone-17/"
+    },
+    {
+      "fuente": "Swappie (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://swappie.com/de-en/model/iphone-17/"
+    },
+    {
+      "fuente": "Swappie (IT)",
+      "tipo": "reacondicionado",
+      "pais": "IT",
+      "url": "https://swappie.com/it/model/iphone-17/"
+    },
+    {
+      "fuente": "Swappie (FR)",
+      "tipo": "reacondicionado",
+      "pais": "FR",
+      "url": "https://swappie.com/fr/model/iphone-17/"
+    },
+    {
+      "fuente": "Refurbed (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://www.refurbed.es/p/iphone-17/"
+    },
+    {
+      "fuente": "Refurbed (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://www.refurbed.de/p/iphone-17/"
+    },
+    {
+      "fuente": "Refurbed (IT)",
+      "tipo": "reacondicionado",
+      "pais": "IT",
+      "url": "https://www.refurbed.it/p/iphone-17/"
+    },
+    {
+      "fuente": "asgoodasnew (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "lector": "asgoodasnew",
+      "url": "https://asgoodasnew.de/Handys/Apple/iPhone-17/"
+    },
+    {
+      "fuente": "Clevertronic (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://www.clevertronic.de/kaufen/handy-kaufen/apple/iphone-17",
+      "lector": "clevertronic",
+      "capacidad": "256 GB"
+    },
+    {
+      "fuente": "Leapp (NL)",
+      "tipo": "reacondicionado",
+      "pais": "NL",
+      "url": "https://leapp.nl/products/iphone-17-256gb"
+    },
+    {
+      "fuente": "Reboxed (UK) 256GB",
+      "tipo": "reacondicionado",
+      "pais": "UK",
+      "capacidad": "256 GB",
+      "url": "https://reboxed.co/products/apple-iphone-17-256gb"
+    },
+    {
+      "fuente": "Reboxed (UK) 512GB",
+      "tipo": "reacondicionado",
+      "pais": "UK",
+      "capacidad": "512 GB",
+      "url": "https://reboxed.co/products/apple-iphone-17-512gb"
+    },
+    {
+      "fuente": "musicMagpie (UK) 256GB",
+      "tipo": "reacondicionado",
+      "pais": "UK",
+      "capacidad": "256 GB",
+      "lector": "musicmagpie",
+      "url": "https://www.musicmagpie.co.uk/store/products/apple-iphone-17-256gb-black-unlocked/"
+    },
+    {
+      "fuente": "Phone House 256GB",
+      "tipo": "nuevo",
+      "pais": "ES",
+      "capacidad": "256 GB",
+      "lector": "phonehouse",
+      "url": "https://www.phonehouse.es/movil/apple/iphone-17-256gb.html"
+    },
+    {
+      "fuente": "MediaMarkt",
+      "tipo": "nuevo",
+      "pais": "ES",
+      "lector": "mediamarkt",
+      "url": "https://www.mediamarkt.es/es/search.html?query=iphone%2017"
+    },
+    {
+      "fuente": "MediaMarkt reacondicionado",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "lector": "mediamarkt",
+      "url": "https://www.mediamarkt.es/es/search.html?query=iphone%2017%20reacondicionado"
+    },
+    {
+      "fuente": "AliExpress",
+      "tipo": "nuevo",
+      "pais": "Global",
+      "lector": "aliexpress",
+      "url": "https://es.aliexpress.com/w/wholesale-iphone-17.html"
+    },
+    {
+      "fuente": "Cash Converters 256GB",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "capacidad": "256 GB",
+      "url": "https://www.cashconverters.es/es/es/comprar/telefonos/moviles/apple/iphone-17-256gb/"
+    },
+    {
+      "fuente": "Vinted",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "lector": "vinted",
+      "url": "https://www.vinted.es/catalog?search_text=iphone%2017"
+    },
+    {
+      "fuente": "Milanuncios",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "lector": "milanuncios",
+      "url": "https://www.milanuncios.com/anuncios/?s=iphone%2017"
+    }
+  ],
+  "capacidades": [
+    "256 GB",
+    "512 GB"
+  ]
+}

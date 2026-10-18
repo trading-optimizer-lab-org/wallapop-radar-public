@@ -1,0 +1,65 @@
+name: precio-mas-barato
+# Busca el precio más barato de un producto en tiendas que envían a España y Europa. Una máquina por tienda (nunca dos
+# a la vez en la misma tienda), una búsqueda por tienda, robots.txt respetado y sin reintentos si una web bloquea.
+on:
+  workflow_dispatch:
+    inputs:
+      producto:
+        description: 'Producto (nombre o modelo, p. ej. "xbox series s")'
+        required: true
+      obligatorias:
+        description: 'Palabras que deben aparecer, separadas por comas (vacío = automático)'
+        default: ''
+      excluir:
+        description: 'Palabras a excluir, separadas por comas (p. ej. "series x,mando")'
+        default: ''
+      precio_minimo:
+        description: 'Precio mínimo en € para descartar accesorios (vacío = mitad de la mediana de Wallapop)'
+        default: ''
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        # Amazon queda fuera: su robots.txt prohíbe a Claude-User (agentes que actúan por encargo de una persona).
+        fuente: ['aliexpress-es,aliexpress-ue,aliexpress-de,aliexpress-global', mediamarkt-es, wallapop]
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i --no-save playwright@1.48.2
+      - name: Buscar
+        env:
+          PRODUCTO: ${{ inputs.producto }}
+        run: node precio/buscar.mjs "${{ matrix.fuente }}" "$PRODUCTO"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: precio-${{ strategy.job-index }}
+          path: out/
+          retention-days: 7
+  juntar:
+    needs: buscar
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: precio-*
+          path: out
+          merge-multiple: true
+      - name: Juntar y ordenar
+        env:
+          PRODUCTO: ${{ inputs.producto }}
+          OBLIG: ${{ inputs.obligatorias }}
+          EXCLUIR: ${{ inputs.excluir }}
+          MINIMO: ${{ inputs.precio_minimo }}
+        run: node precio/juntar.mjs "$PRODUCTO" "$OBLIG" "$EXCLUIR" "$MINIMO"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultado
+          path: |
+            out/precio-resultado.json
+            out/precio-resumen.md
+          retention-days: 30

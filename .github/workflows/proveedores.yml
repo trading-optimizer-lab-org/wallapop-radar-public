@@ -1,0 +1,66 @@
+name: proveedores
+# Dónde comprar más barato un producto: nuevo, reacondicionado y segunda mano (incluidos Wallapop, Vinted y Milanuncios).
+# Lee precio/productos/<producto>.json. Una máquina por web (las fichas de la misma web van en la misma máquina, con
+# pausas), robots.txt respetado (también las reglas para Claude-User) y sin insistir si una web muestra un bloqueo.
+on:
+  workflow_dispatch:
+    inputs:
+      producto:
+        description: 'Archivo del producto en precio/productos, sin .json (p. ej. "iphone-17")'
+        required: true
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      webs: ${{ steps.webs.outputs.webs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: webs
+        env:
+          PRODUCTO: ${{ inputs.producto }}
+        run: |
+          node -e "const p=JSON.parse(require('fs').readFileSync('precio/productos/'+process.env.PRODUCTO+'.json','utf8'));const w=[...new Set(p.fichas.map(f=>new URL(f.url).hostname.replace(/^www\./,'')))];console.log('webs='+JSON.stringify(w))" >> "$GITHUB_OUTPUT"
+  visitar:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        web: ${{ fromJSON(needs.plan.outputs.webs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i --no-save playwright@1.48.2
+      - name: Visitar fichas de ${{ matrix.web }}
+        env:
+          PRODUCTO: ${{ inputs.producto }}
+          WEB: ${{ matrix.web }}
+        run: node precio/visitar.mjs "precio/productos/$PRODUCTO.json" "$WEB"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-${{ strategy.job-index }}
+          path: out/
+          retention-days: 7
+  informe:
+    needs: visitar
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: raw-*
+          path: out
+          merge-multiple: true
+      - name: Informe
+        env:
+          PRODUCTO: ${{ inputs.producto }}
+        run: node precio/informe.mjs "precio/productos/$PRODUCTO.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proveedores-${{ inputs.producto }}
+          path: |
+            out/proveedores.json
+            out/proveedores.md
+          retention-days: 30

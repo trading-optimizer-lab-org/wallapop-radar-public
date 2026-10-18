@@ -1,0 +1,213 @@
+{
+  "producto": "iPhone 15 Pro",
+  "modelo": {
+    "incluye": "iphone\\s?-?15\\s?-?pro",
+    "excluye": "\\bmax\\b|funda|carcasa|coque|protector|cristal|\\bcase\\b|cover|h[üu]lle|correa|cargador"
+  },
+  "capacidades": [
+    "128 GB",
+    "256 GB",
+    "512 GB",
+    "1 TB"
+  ],
+  "busqueda": "iphone 15 pro",
+  "fichas": [
+    {
+      "fuente": "Geizhals (DE/AT)",
+      "tipo": "comparador",
+      "pais": "DE",
+      "url": "https://geizhals.de/apple-iphone-15-pro-v140382.html"
+    },
+    {
+      "fuente": "PriceSpy (UK) 128GB",
+      "tipo": "comparador",
+      "pais": "UK",
+      "url": "https://pricespy.co.uk/product.php?p=12105530",
+      "lector": "prisjakt",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "LeDénicheur (FR) 128GB",
+      "tipo": "comparador",
+      "pais": "FR",
+      "url": "https://ledenicheur.fr/product.php?p=12105530",
+      "lector": "prisjakt",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "Kimovil",
+      "tipo": "comparador",
+      "pais": "Global",
+      "url": "https://www.kimovil.com/es/donde-comprar-apple-iphone-15-pro",
+      "lector": "kimovil"
+    },
+    {
+      "fuente": "Rebuy (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://rebuy.es/comprar/telefonos-moviles-libres-apple-iphone-15-pro"
+    },
+    {
+      "fuente": "Certideal (FR)",
+      "tipo": "reacondicionado",
+      "pais": "FR",
+      "url": "https://certideal.com/iphone-15-pro-416",
+      "lector": "certideal"
+    },
+    {
+      "fuente": "Swappie (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://swappie.com/es/iphone/iphone-15-pro/"
+    },
+    {
+      "fuente": "Swappie (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://swappie.com/de-en/model/iphone-15-pro/"
+    },
+    {
+      "fuente": "Swappie (IT)",
+      "tipo": "reacondicionado",
+      "pais": "IT",
+      "url": "https://swappie.com/it/model/iphone-15-pro/"
+    },
+    {
+      "fuente": "Swappie (FR)",
+      "tipo": "reacondicionado",
+      "pais": "FR",
+      "url": "https://swappie.com/fr/model/iphone-15-pro/"
+    },
+    {
+      "fuente": "Swappie (PT)",
+      "tipo": "reacondicionado",
+      "pais": "PT",
+      "url": "https://swappie.com/pt/model/iphone-15-pro/"
+    },
+    {
+      "fuente": "Refurbed (ES)",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://www.refurbed.es/p/iphone-15-pro/"
+    },
+    {
+      "fuente": "Refurbed (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://www.refurbed.de/p/iphone-15-pro/"
+    },
+    {
+      "fuente": "Refurbed (IT)",
+      "tipo": "reacondicionado",
+      "pais": "IT",
+      "url": "https://www.refurbed.it/p/iphone-15-pro/"
+    },
+    {
+      "fuente": "asgoodasnew (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://asgoodasnew.de/Handys/Apple/iPhone-15/iPhone-15-Pro/",
+      "lector": "asgoodasnew"
+    },
+    {
+      "fuente": "Clevertronic (DE)",
+      "tipo": "reacondicionado",
+      "pais": "DE",
+      "url": "https://www.clevertronic.de/kaufen/handy-kaufen/apple/iphone-15-pro",
+      "lector": "clevertronic",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "Phone House ReNuevo 128GB",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://www.phonehouse.es/movil/apple/iphone-15-pro-128gb-reacondicionado.html",
+      "lector": "phonehouse",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "Reboxed (UK)",
+      "tipo": "reacondicionado",
+      "pais": "UK",
+      "url": "https://reboxed.co/collections/refurbished-iphone-15-pro",
+      "lector": "reboxed"
+    },
+    {
+      "fuente": "musicMagpie (UK)",
+      "tipo": "reacondicionado",
+      "pais": "UK",
+      "url": "https://www.musicmagpie.co.uk/store/category/mobile-phones/apple/iphone-15-pro/",
+      "lector": "musicmagpie"
+    },
+    {
+      "fuente": "Leapp (NL)",
+      "tipo": "reacondicionado",
+      "pais": "NL",
+      "url": "https://leapp.nl/en/products/refurbished-iphone-15-pro"
+    },
+    {
+      "fuente": "MediaMarkt reacondicionado",
+      "tipo": "reacondicionado",
+      "pais": "ES",
+      "url": "https://www.mediamarkt.es/es/search.html?query=iphone%2015%20pro%20reacondicionado",
+      "lector": "mediamarkt"
+    },
+    {
+      "fuente": "Phone House 128GB",
+      "tipo": "nuevo",
+      "pais": "ES",
+      "url": "https://www.phonehouse.es/movil/apple/iphone-15-pro-128gb.html",
+      "lector": "phonehouse",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "Movistar 128GB",
+      "tipo": "nuevo",
+      "pais": "ES",
+      "url": "https://www.movistar.es/moviles/apple-iphone-15-pro-128gb-titanionegro/",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "MediaMarkt",
+      "tipo": "nuevo",
+      "pais": "ES",
+      "url": "https://www.mediamarkt.es/es/search.html?query=iphone%2015%20pro",
+      "lector": "mediamarkt"
+    },
+    {
+      "fuente": "AliExpress",
+      "tipo": "nuevo",
+      "pais": "Global",
+      "url": "https://es.aliexpress.com/w/wholesale-iphone-15-pro.html",
+      "lector": "aliexpress"
+    },
+    {
+      "fuente": "Cash Converters 128GB",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "url": "https://www.cashconverters.es/es/es/comprar/telefonos/moviles/apple/iphone-15-pro-128gb/",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "CeX 128GB natural A",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "url": "https://es.webuy.com/product-detail/?id=sappi15pr128gtnaliba&categoryName=moviles-iphone&superCatName=moviles",
+      "capacidad": "128 GB"
+    },
+    {
+      "fuente": "Vinted",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "url": "https://www.vinted.es/catalog?search_text=iphone%2015%20pro",
+      "lector": "vinted"
+    },
+    {
+      "fuente": "Milanuncios",
+      "tipo": "segunda mano",
+      "pais": "ES",
+      "url": "https://www.milanuncios.com/anuncios/?s=iphone%2015%20pro",
+      "lector": "milanuncios"
+    }
+  ]
+}
